@@ -75,7 +75,17 @@ ul {
 .cart-icon {
     font-weight: 600;
     border-radius: 10px;
-    height: 30px;
+    height: 50px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    border: 2px solid var(--text-black);
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    height: 50px;
     padding: 5px 10px;
     margin-right: 1rem;
     border: 2px solid #fff;
@@ -212,9 +222,136 @@ main {
     text-align: center;
 }
 
+#info {
+    padding: 50px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
 
+#info h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--text-rose);
+}
 
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.info-card {
+    width: 330px;
+    height: 350px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
 
+.info-card img {
+    height: 200px;
+}
 
+.info-card h3 {
+    font-weight: 800;
+    font-size: 26px;
+}
 
+.info-card p {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+footer {
+    background: var(--secondary);
+    color: var(--nav-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    width: 100%;
+    position: absolute;
+}
+
+footer a {
+    color: var(--primary);
+    font-weight: 300;
+    font-size: 14px;
+    float: inline-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    width: 400px;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+}
+
+.contact-info-list {
+    display: flex;
+    gap: 5px;
+    float: right;
+}
+
+.contact img {
+    width: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.image-footer {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+}
+
+.image-footer img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.copyright {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    gap: 20px;
+
+}
+
+.copyright-img {
+    width: 50px;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    text-align: center;
+}
