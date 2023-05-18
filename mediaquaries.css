@@ -97,6 +97,10 @@
         border:none
     }
 
+    .hero-info h1 {
+        font-size: 30px;
+    }
+
     .hero-info p {
         width: 70%;
         max-width: unset;
