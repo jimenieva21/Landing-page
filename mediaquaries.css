@@ -91,6 +91,17 @@
 @media (max-width:576px) {
     /*mobile*/
 
+    .header {
+        overflow: unset;
+        margin: auto;
+        position: relative;
+    }
+
+    .navbar {
+        width: 576px;
+        height: 65px;
+    }
+
     .navbar-list {
         left: 0;
         width: 100%;
