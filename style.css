@@ -8,6 +8,7 @@
 
     text-decoration: none;
     list-style-type: none;
+    border: 1px solid red;
 }
 
 :root {
