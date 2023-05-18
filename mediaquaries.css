@@ -1,0 +1,125 @@
+/*mediaquaries*/
+
+@media (max-width:992px) {
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 33px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: var(--nav-bg);
+        border: 2px solid var(--text-rose);
+        border-top: 0;
+        border-radius: 0 0 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .navbar-list a {
+        font-size: 18px;
+    }
+
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-label img {
+        height: 30px;
+        width: 30px;
+        display: flex;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+
+    #hero {
+        max-width: 992px;
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-info p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    .about-info p{
+        font-size: 18px;
+    }
+
+    footer {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .image-footer {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    /*mobile*/
+
+    .navbar-list {
+        left: 0;
+        width: 100%;
+        border:none
+    }
+
+    .hero-info p {
+        width: 70%;
+        max-width: unset;
+    }
+
+    .info-card {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+    }
+
+    .info-card p {
+        width: 90%;
+    }
+
+    .about-info p{
+        font-size: 18px;
+    }
+
+    .info p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

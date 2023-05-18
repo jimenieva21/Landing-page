@@ -24,6 +24,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/*header*/
+
 header {
     background: var(--nav-bg);
     width: 100%;
@@ -31,11 +33,13 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    padding: 50px;
+    padding: 30px;
     position: fixed;
     top: 0;
     z-index: 2;
 }
+
+/*nav*/
 
 .navbar,
 .navbar-list {
@@ -45,30 +49,25 @@ header {
 }
 
 .navbar {
-    gap: 800px;
+    gap: 150px;
+    
+}
+
+.logo-tam {
+    height: 65px;
 }
 
 .navbar-list {
     gap: 30px;
 }
 
-ul a {
+.navbar-list a {
     color: var(--primary);
-    text-decoration: none;
+    font-size: 14px;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.logo-tam {
-    height: 100px;
-}
-
-.navbar-list li:first-child {
-    color: var(--nav-bg);
+.navbar-list li:first-child > a {
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -78,19 +77,26 @@ ul {
     height: 50px;
     padding: 5px 10px;
     margin-right: 1rem;
-    border: 2px solid var(--text-black);
+    border: 3px solid var(--text-black);
     cursor: pointer;
+    
 }
 
-.menu-icon {
-    font-weight: 600;
-    border-radius: 10px;
-    height: 50px;
-    padding: 5px 10px;
-    margin-right: 1rem;
-    border: 2px solid #fff;
+.menu-label img {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
     cursor: pointer;
+    
 }
+
+#cart-toggle,
+#menu-toggle,
+.menu-label img {
+    display: none;
+}
+
+/*main*/
 
 main {
     background: var(--background);
@@ -101,6 +107,8 @@ main {
     color: #fff;
     width: 100%;
 }
+
+/*section hero*/
 
 #hero {
     margin-top: 65px;
@@ -115,6 +123,7 @@ main {
     flex-direction: column;
     gap: 20px;
     width: 50%;
+    justify-content: center;
 }
 
 .hero-info h1 {
@@ -130,32 +139,37 @@ main {
     color: var(--text-black);
 }
 
+.botones {
+    gap: 30px;
+    justify-content: center;
+}
+
+.botones a {
+    color: var(--primary);
+    justify-content: center;
+}
+
 .boton-1 {
-    color: var(--text-black);
     background-color: var(--nav-bg);
-    width: 200px;
-    padding: 8px;
-    border-radius: 100px;
     font-size: 14px;
     text-align: center;
-    gap: 20px;
+    float: left;
+    width: 200px;
+    padding: 8px;
     border: 5px solid var(--nav-bg);
+    border-radius: 100px;
 }
 
 .boton-2 {
-    color: var(--text-black);
     background-color: var(--background);
-    width: 200px;
-    padding: 8px;
-    border-radius: 100px;
     font-size: 14px;
     text-align: center;
-    gap: 20px;
+    float: left;
+    width: 200px;
+    padding: 8px;
     border: 5px solid var(--nav-bg);
-}
-
-.botones {
-    gap: 30px;
+    border-radius: 100px;
+    
 }
 
 .hero-card {
@@ -200,6 +214,8 @@ main {
     font-family: 'Playfair Display', serif;
 }
 
+/*section about*/
+
 #about {
     width: 100%;
     margin: 80px;
@@ -221,6 +237,8 @@ main {
     gap: 100px;
     text-align: center;
 }
+
+/*section info*/
 
 #info {
     padding: 50px 0;
@@ -272,15 +290,18 @@ main {
     color: var(--text-black);
 }
 
+/*section footer*/
+
 footer {
     background: var(--secondary);
     color: var(--nav-bg);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 70px;
-    width: 100%;
-    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 5rem;
 }
 
 footer a {
@@ -294,9 +315,9 @@ footer a {
 
 .contact {
     display: flex;
-    gap: 20px;
-    width: 400px;
-    flex-direction: column;
+    gap: 40px;
+    padding: 1rem;
+    line-height: 40px;
 }
 
 .contact-info {
@@ -335,23 +356,17 @@ footer a {
     border-radius: 10px;
 }
 
-.copyright {
+.copy {
     align-items: center;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    
     gap: 20px;
-
 }
 
 .copyright-img {
     width: 50px;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    gap: 20px;
-    text-align: center;
 }
+
+
